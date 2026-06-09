@@ -32,19 +32,20 @@
             flex-direction: column;
             justify-content: space-between;
         }
-        /* Centered and scaled down the portraits to keep them clean */
+        /* Elegant wrapper to center the images */
         .avatar-wrapper {
             width: 100%;
             display: flex;
             justify-content: center;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
         }
+        /* Fixes blurriness by preserving natural aspect ratio scaling */
         .card img.avatar {
-            width: 200px;
-            height: 240px;
-            object-fit: cover;
+            width: 90%;
+            height: auto;
             border-radius: 8px;
             border: 1px solid #58a6ff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.4);
         }
         .terminal {
             background: #000;
@@ -57,7 +58,7 @@
             border: 1px solid #333;
             line-height: 1.5;
             
-            /* Fixed height with internal scrolling to see every line */
+            /* Keeps the layout uniform while letting you scroll inside */
             height: 350px; 
             overflow-y: auto; 
         }
