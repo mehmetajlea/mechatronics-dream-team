@@ -32,8 +32,17 @@
             flex-direction: column;
             justify-content: space-between;
         }
-        .card img.avatar {
+        /* Centered and scaled down the portraits to keep them clean */
+        .avatar-wrapper {
             width: 100%;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        .card img.avatar {
+            width: 200px;
+            height: 240px;
+            object-fit: cover;
             border-radius: 8px;
             border: 1px solid #58a6ff;
         }
@@ -47,8 +56,17 @@
             margin-top: 15px;
             border: 1px solid #333;
             line-height: 1.5;
-            flex-grow: 1; /* Keeps all terminal boxes exactly the same level */
+            
+            /* Fixed height with internal scrolling to see every line */
+            height: 350px; 
+            overflow-y: auto; 
         }
+        /* Custom clean scrollbar for the terminals */
+        .terminal::-webkit-scrollbar { width: 6px; }
+        .terminal::-webkit-scrollbar-track { background: #000; }
+        .terminal::-webkit-scrollbar-thumb { background: #21262d; border-radius: 3px; }
+        .terminal::-webkit-scrollbar-thumb:hover { background: #58a6ff; }
+
         .terminal ul {
             list-style-type: "• ";
             padding-left: 15px;
@@ -93,7 +111,9 @@
         <!-- 1st: MSc. Ylli Rexhaj -->
         <div class="card">
             <div>
-                <img src="IMG_7480.jpeg" class="avatar" alt="MSc. Ylli Rexhaj">
+                <div class="avatar-wrapper">
+                    <img src="IMG_7480.jpeg" class="avatar" alt="MSc. Ylli Rexhaj">
+                </div>
                 <h3>MSc. Ylli Rexhaj</h3>
                 <span class="tag">AI & Embedded</span>
                 <span class="tag">Mechatronics Engineer</span>
@@ -115,7 +135,9 @@
         <!-- 2nd: MSc. Arxhend Jetullahu -->
         <div class="card">
             <div>
-                <img src="IMG_7481.jpeg" class="avatar" alt="MSc. Arxhend Jetullahu">
+                <div class="avatar-wrapper">
+                    <img src="IMG_7481.jpeg" class="avatar" alt="MSc. Arxhend Jetullahu">
+                </div>
                 <h3>MSc. Arxhend Jetullahu</h3>
                 <span class="tag">Python Enthusiast</span>
                 <span class="tag">Forensics</span>
@@ -138,7 +160,9 @@
         <!-- 3rd: MSc. Redon Rexhepi -->
         <div class="card">
             <div>
-                <img src="IMG_7699.jpeg" class="avatar" alt="MSc. Redon Rexhepi">
+                <div class="avatar-wrapper">
+                    <img src="IMG_7699.jpeg" class="avatar" alt="MSc. Redon Rexhepi">
+                </div>
                 <h3>MSc. Redon Rexhepi</h3>
                 <span class="tag">Automation & Robotics</span>
                 <span class="tag">Mechatronics Engineer</span>
@@ -158,7 +182,9 @@
         <!-- 4th: MSc. Ideal Rafuna -->
         <div class="card">
             <div>
-                <img src="IMG_7244.png" class="avatar" alt="MSc. Ideal Rafuna">
+                <div class="avatar-wrapper">
+                    <img src="IMG_7244.png" class="avatar" alt="MSc. Ideal Rafuna">
+                </div>
                 <h3>MSc. Ideal Rafuna</h3>
                 <span class="tag">Aerospace Engineer</span>
             </div>
