@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MEK23/24: The Dream Team</title>
+    <title>LABORATORY OF MECHATRONICS DREAM TEAM -1</title>
     <style>
         body {
             background-color: #0d1117;
@@ -44,29 +44,20 @@
             padding: 15px;
             border-radius: 5px;
             font-size: 13px;
-            height: 320px; /* Fixed height to keep cards completely equal */
-            overflow-y: scroll; /* Allows swiping/scrolling inside the box */
             margin-top: 15px;
             border: 1px solid #333;
             line-height: 1.5;
+            flex-grow: 1; /* Keeps all terminal boxes exactly the same level */
         }
-        /* Custom scrollbar styling for a cleaner terminal aesthetic */
-        .terminal::-webkit-scrollbar { width: 6px; }
-        .terminal::-webkit-scrollbar-track { background: #000; }
-        .terminal::-webkit-scrollbar-thumb { background: #21262d; border-radius: 3px; }
-        .terminal::-webkit-scrollbar-thumb:hover { background: #58a6ff; }
-        
-        .code-block {
-            color: #e2e8f0;
-            background: #0a0e14;
-            padding: 10px;
-            border-radius: 4px;
-            margin-bottom: 15px;
-            border-left: 3px solid #39ff14;
-            white-space: pre-wrap;
-            font-size: 12px;
+        .terminal ul {
+            list-style-type: "• ";
+            padding-left: 15px;
+            margin: 5px 0 15px 0;
+            color: #58a6ff;
         }
-        .code-comment { color: #8b949e; }
+        .terminal ul li {
+            margin-bottom: 4px;
+        }
         .tag {
             display: inline-block;
             background: #21262d;
@@ -87,7 +78,7 @@
         .footer-section h2 {
             color: #58a6ff;
             margin: 0;
-            font-size: 18px;
+            font-size: 16px;
             letter-spacing: 1px;
         }
     </style>
@@ -109,24 +100,14 @@
                 <span class="tag">C / Python</span>
             </div>
             <div class="terminal">
-                <p style="color: #58a6ff; margin-top: 0;"><strong>> MUG_MOCK_COMPILE:</strong></p>
-                <div class="code-block">while Ylli.is_teaching():
-    ego_boost += 1
-    print(*is_the_best)
-    
-    for_me = 1
-    faculty_rank = for_me &lt;&lt; 2
-
-<span class="code-comment"># Easily my absolute favorite routine and person from the very beginning.
-# Thank you for the endless laughs, the inside jokes, and making this journey so special.</span></div>
-                
-                <p><strong>> COMPLETED_MODULES:</strong></p>
-                <p>• Lab 1 & Lab 2 (Learning the basics of electronics and circuits)<br>
-                   • Lab 3 (Programming a robot)<br>
-                   • Artificial Intelligence (Basics of python , AI algorithms, to full custom datasets, GitHub deployment, & research paper documentation)<br>
-                   • Embedded Systems (Basics, timers, interrupts, UART, and ADC)</p>
-                
-                <p><strong>> COHORT_LOG:</strong></p>
+                <p style="margin-top: 0; color: #58a6ff;"><strong>> COMPLETED_MODULES:</strong></p>
+                <ul>
+                    <li>Lab 1 & Lab 2 (Learning the basics of electronics and circuits)</li>
+                    <li>Lab 3 (Programming a robot)</li>
+                    <li>Artificial Intelligence (Basics of python , AI algorithms, to full custom datasets, GitHub deployment, & research paper documentation)</li>
+                    <li>Embedded Systems (Basics, timers, interrupts, UART, and ADC)</li>
+                </ul>
+                <p style="color: #58a6ff;"><strong>> COHORT_LOG:</strong></p>
                 <p>Simply the best and incredibly patient with us. You never got tired of explaining the exact same things so many times until we truly understood them. Your funny jokes always kept the lab mood up, but you knew exactly when it was time to be serious. Thank you for the endless advice, for motivating us to learn everything ourselves just like you did, and for pushing me never to give up on a subject. You didn't just teach us engineering, you left a permanent mark on my journey here.</p>
             </div>
         </div>
@@ -141,23 +122,15 @@
                 <span class="tag">Mechatronics Engineer</span>
             </div>
             <div class="terminal">
-                <p style="color: #58a6ff; margin-top: 0;"><strong>> MUG_MOCK_COMPILE:</strong></p>
-                <div class="code-block">while prof_Arxhendi.makes_learning_fun():
-    share_infinite_knowledge()
-    aura_points += 500
-
-<span class="code-comment"># Thank you for the laughs and for always making sure we actually learn.
-# Your infinite knowledge and brilliant humor made the hardest days manageable.
-# Solid Top 5 aura of the professors.</span></div>
-                
-                <p><strong>> COMPLETED_MODULES:</strong></p>
-                <p>• Computer Science 1<br>
-                   • Lab 1 & Lab 2<br>
-                   • Production Automation (Pneumatic circuits and PLC)<br>
-                   • Robotics (Building a robot from scratch & programming robotic arm)<br>
-                   • Implementation of Mechatronics System (Creating system with PID control)</p>
-                
-                <p><strong>> COHORT_LOG:</strong></p>
+                <p style="margin-top: 0; color: #58a6ff;"><strong>> COMPLETED_MODULES:</strong></p>
+                <ul>
+                    <li>Computer Science 1</li>
+                    <li>Lab 1 & Lab 2</li>
+                    <li>Production Automation (Pneumatic circuits and PLC)</li>
+                    <li>Robotics (Building a robot from scratch & programming robotic arm)</li>
+                    <li>Implementation of Mechatronics System (Creating system with PID control)</li>
+                </ul>
+                <p style="color: #58a6ff;"><strong>> COHORT_LOG:</strong></p>
                 <p>The absolute funniest prof, and you've been right here with us since day one. You are incredibly smart across so many fields. You have this classic way of never directly praising us or saying when something is good, you just look at us and listen to what we are saying while we wait for feedback, but your jokes always knows exactly how to make our day better. I've had such an amazing time learning from you, and honestly, thank you for being the designated person I complained to the most out of everyone! Your dry wit and brilliant tech insights made the hardest semesters entirely worth it.</p>
             </div>
         </div>
@@ -171,15 +144,13 @@
                 <span class="tag">Mechatronics Engineer</span>
             </div>
             <div class="terminal">
-                <p style="color: #58a6ff; margin-top: 0;"><strong>> MUG_MOCK_COMPILE:</strong></p>
-                <div class="code-block"><span class="code-comment">// Thank you for showing me that the quietest focus brings the smartest solutions.</span></div>
-                
-                <p><strong>> COMPLETED_MODULES:</strong></p>
-                <p>• Lab 2<br>
-                   • Automation<br>
-                   • Robotics</p>
-                
-                <p><strong>> COHORT_LOG:</strong></p>
+                <p style="margin-top: 0; color: #58a6ff;"><strong>> COMPLETED_MODULES:</strong></p>
+                <ul>
+                    <li>Lab 2</li>
+                    <li>Automation</li>
+                    <li>Robotics</li>
+                </ul>
+                <p style="color: #58a6ff;"><strong>> COHORT_LOG:</strong></p>
                 <p>The most mysterious and quiet one of them all! While we didn't talk a whole lot throughout our time in the lab, you always brought a calm focus to our engineering tracks. Getting you to break character and occasionally laugh at some of our jokes always felt like a massive system victory for the day. Thank you for your quiet dedication!</p>
             </div>
         </div>
@@ -192,20 +163,11 @@
                 <span class="tag">Aerospace Engineer</span>
             </div>
             <div class="terminal">
-                <p style="color: #58a6ff; margin-top: 0;"><strong>> MUG_MOCK_COMPILE:</strong></p>
-                <div class="code-block">while (sigma_mode) {
-    rage_bait();
-    give_life_advice();
-    aura_points += 1;
-}
-
-<span class="code-comment">// You've definitely left an impact here!
-// Long live the Emperor of Aerospace!</span></div>
-                
-                <p><strong>> COMPLETED_MODULES:</strong></p>
-                <p>• Autonomous & Mobile Robots (Creating a digital twin of the DJI Tello drone)</p>
-                
-                <p><strong>> COHORT_LOG:</strong></p>
+                <p style="margin-top: 0; color: #58a6ff;"><strong>> COMPLETED_MODULES:</strong></p>
+                <ul>
+                    <li>Autonomous & Mobile Robots (Creating a digital twin of the DJI Tello drone)</li>
+                </ul>
+                <p style="color: #58a6ff;"><strong>> COHORT_LOG:</strong></p>
                 <p>You joined us from America just for this final year and completely shook up the laboratory workspace. A true aerospace engineer whose specialization is completely in drones, but your real expertise is deploying funny jokes all the time, never getting serious, elite rage-baiting, and making fun of the other team members! You constantly call yourself 'Sigma' and turned our labs into a daily competition of who has the highest 'aura.' Even though there were times I couldn't stand the absolute chaos and learned little from the actual subject, you were interested, gave excellent life advice, and told us amazing stories. Plus, bringing us baklava that one time was the absolute best. Safe travels on your way back to America, "Sigma"! May your aura stay unmatched.</p>
             </div>
         </div>
