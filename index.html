@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mechatronics Lab: Core Team</title>
+    <title>MEK 23/24: Engineering Logbook</title>
     <style>
         body {
             background-color: #0d1117;
@@ -13,13 +13,14 @@
             padding: 20px;
             text-align: center;
         }
-        h1 { color: #58a6ff; border-bottom: 2px dashed #30363d; padding-bottom: 10px; }
+        h1 { color: #58a6ff; border-bottom: 2px dashed #30363d; padding-bottom: 10px; margin-bottom: 5px; }
+        .subtitle { color: #8b949e; font-size: 14px; margin-top: 0; margin-bottom: 40px; }
         .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 20px;
             max-width: 1200px;
-            margin: 40px auto;
+            margin: 0 auto 50px auto;
         }
         .card {
             background: #161b22;
@@ -31,10 +32,18 @@
             flex-direction: column;
             justify-content: space-between;
         }
-        .card img {
+        .card img.avatar {
             width: 100%;
             border-radius: 8px;
             border: 1px solid #58a6ff;
+        }
+        .project-screenshot {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-top: 10px;
+            border: 1px solid #30363d;
         }
         .terminal {
             background: #000;
@@ -42,11 +51,12 @@
             text-align: left;
             padding: 15px;
             border-radius: 5px;
-            font-size: 14px;
-            height: 180px;
+            font-size: 13px;
+            height: 200px;
             overflow-y: auto;
             margin-top: 15px;
             border: 1px solid #333;
+            line-height: 1.4;
         }
         .tag {
             display: inline-block;
@@ -57,64 +67,90 @@
             font-size: 12px;
             margin: 5px 2px;
         }
+        .sign-off-section {
+            max-width: 600px;
+            margin: 50px auto 20px auto;
+            padding: 20px;
+            border: 1px dashed #30363d;
+            background: #161b22;
+            border-radius: 10px;
+        }
+        .sign-off-section img {
+            width: 100%;
+            filter: invert(1) opacity(0.8); /* Inverts dark signatures to match dark mode */
+            margin-top: 15px;
+        }
     </style>
 </head>
 <body>
 
-    <h1>// MECHATRONICS_LAB_V4.0: FACULTY_CORE_BOOT</h1>
-    <p>System Status: Online. Class of 2026 graduation sequence initialized.</p>
+    <h1>// MEK_23_24: PROJECT_RELEASE_LOG</h1>
+    <p class="subtitle">System Verification: Complete. Compiling milestones from the laboratory archive.</p>
 
     <div class="grid">
         
         <div class="card">
             <div>
-                <img src="IMG_7244.png" alt="Professor 1">
-                <h3>MSc.Ideal Rafuna</h3>
-                <span class="tag">Python</span><span class="tag">Spaceflight</span>
+                <img src="IMG_7244.png" class="avatar" alt="MSc. Ideal Rafuna">
+                <h3>MSc. Ideal Rafuna</h3>
+                <span class="tag">Aerospace</span><span class="tag">Control Systems</span>
             </div>
             <div class="terminal">
-                <p><strong>> loading_student_notes...</strong></p>
-                <p><strong>Student Name:</strong> Type the farewell message here.</p>
-                <p><strong>Student Name:</strong> Type another message here.</p>
+                <p><strong>> FETCHING_PROJECT_LOGS...</strong></p>
+                <p><strong>[Project]:</strong> Rocket Telemetry Unit</p>
+                <p><strong>[Hardware]:</strong> IMU Sensor, Arduino, RF Link</p>
+                <p><strong>[Notes]:</strong> Thank you for helping us debug our flight control algorithms when our code kept crashing!</p>
             </div>
-        </div>
+            </div>
 
         <div class="card">
             <div>
-                <img src="IMG_7480.jpeg" alt="Professor 2">
-                <h3>MSc.Ylli Rexhaj</h3>
+                <img src="IMG_7480.jpeg" class="avatar" alt="MSc. Ylli Rexhaj">
+                <h3>MSc. Ylli Rexhaj</h3>
                 <span class="tag">C++</span><span class="tag">AI & Robotics</span>
             </div>
             <div class="terminal">
-                <p><strong>> loading_student_notes...</strong></p>
-                <p><strong>Student Name:</strong> Type the farewell message here.</p>
+                <p><strong>> FETCHING_PROJECT_LOGS...</strong></p>
+                <p><strong>[Project]:</strong> Computer Vision Rover</p>
+                <p><strong>[Hardware]:</strong> Raspberry Pi, OpenCV, DC Motors</p>
+                <p><strong>[Notes]:</strong> Your guidance on embedding AI logic into our hardware constraints changed how we build systems.</p>
             </div>
         </div>
 
         <div class="card">
             <div>
-                <img src="IMG_7481.jpeg" alt="Professor 3">
-                <h3>MSc.Arxhend Jetullahu</h3>
+                <img src="IMG_7481.jpeg" class="avatar" alt="MSc. Arxhend Jetullahu">
+                <h3>MSc. Arxhend Jetullahu</h3>
                 <span class="tag">Linux</span><span class="tag">Signal Processing</span>
             </div>
             <div class="terminal">
-                <p><strong>> loading_student_notes...</strong></p>
-                <p><strong>Student Name:</strong> Type the farewell message here.</p>
+                <p><strong>> FETCHING_PROJECT_LOGS...</strong></p>
+                <p><strong>[Project]:</strong> Digital Signal Filter</p>
+                <p><strong>[Hardware]:</strong> Oscilloscope, DSP Chips</p>
+                <p><strong>[Notes]:</strong> Thank you for teaching us how to isolate real system data from raw environmental noise.</p>
             </div>
         </div>
 
         <div class="card">
             <div>
-                <img src="IMG_7699.jpeg" alt="Professor 4">
-                <h3>MSc.Redon Rexhepi</h3>
+                <img src="IMG_7699.jpeg" class="avatar" alt="MSc. Redon Rexhepi">
+                <h3>MSc. Redon Rexhepi</h3>
                 <span class="tag">PLC Systems</span><span class="tag">Automation</span>
             </div>
             <div class="terminal">
-                <p><strong>> loading_student_notes...</strong></p>
-                <p><strong>Student Name:</strong> Type the farewell message here.</p>
+                <p><strong>> FETCHING_PROJECT_LOGS...</strong></p>
+                <p><strong>[Project]:</strong> Automated Sorting Belt</p>
+                <p><strong>[Hardware]:</strong> Siemens PLC, Pneumatic Actuators</p>
+                <p><strong>[Notes]:</strong> Our factory automation setup would have never hit its cycle targets without your layout critique.</p>
             </div>
         </div>
 
+    </div>
+
+    <div class="sign-off-section">
+        <h3>// FINAL_SYSTEM_SIGN_OFF</h3>
+        <p style="font-size: 12px; color: #8b949e;">Authorized for deployment by class MEK 23/24 verification roster:</p>
+        <img src="signatures.png" alt="MEK 23/24 Sign-off Sheet">
     </div>
 
 </body>
