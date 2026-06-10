@@ -28,7 +28,7 @@
             gap: 20px;
             max-width: 1200px;
             margin: 0 auto 50px auto;
-            align-items: start; 
+            align-items: start;
         }
         
         .card {
@@ -43,19 +43,16 @@
         
         .avatar-wrapper {
             width: 100%;
-            height: 380px;
             display: flex;
             justify-content: center;
             margin-bottom: 15px;
-            overflow: hidden;
-            border-radius: 8px;
-            border: 1px solid #58a6ff;
         }
         
         .card img.avatar {
             width: 100%;
-            height: 100%;
-            object-fit: cover; 
+            height: auto;
+            border-radius: 8px;
+            border: 1px solid #58a6ff;
             box-shadow: 0 2px 8px rgba(0,0,0,0.4);
         }
         
@@ -86,17 +83,25 @@
         .terminal ul li {
             margin-bottom: 4px;
         }
+        
         .code-block {
-            background: #0a0e14;
-            border-left: 3px solid #ffff33;
-            padding: 8px;
+            background: #1e1e1e;
+            border-left: 3px solid #ff79c6;
+            padding: 12px;
             margin: 10px 0;
             font-family: Consolas, Monaco, monospace;
-            color: #8beb53;
+            color: #f8f8f2;
             white-space: pre-line;
-            font-size: 12px;
-            line-height: 1.4;
+            font-size: 13px;
+            line-height: 1.5;
+            border-radius: 4px;
         }
+        .py-k { color: #ff79c6; font-weight: bold; }
+        .py-f { color: #8beb53; }
+        .py-v { color: #9cdcfe; }
+        .py-n { color: #bd93f9; }
+        .py-o { color: #ff79c6; }
+        
         .tag {
             display: inline-block;
             background: #21262d;
@@ -156,14 +161,12 @@
                     <li>Embedded Systems (Basics, timers, interrupts, UART, and ADC)</li>
                 </ul>
                 <p style="color: #58a6ff;"><strong>> EXECUTE_SCRIPT:</strong></p>
-                <div class="code-block">
-                    while Ylli.is_teaching():
-                    &nbsp;&nbsp;&nbsp;&nbsp;ego_boost += 1
-                    &nbsp;&nbsp;&nbsp;&nbsp;print(*is_the_best)
+                <div class="code-block"><span class="py-k">while</span> <span class="py-v">Ylli</span>.<span class="py-f">is_teaching</span>():
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="py-v">ego_boost</span> <span class="py-o">+=</span> <span class="py-n">1</span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="py-f">print</span>(<span class="py-o">*</span><span class="py-v">is_the_best</span>)
                     <br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;for_me = 1
-                    &nbsp;&nbsp;&nbsp;&nbsp;faculty_rank = for_me &lt;&lt; 2
-                </div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="py-v">for_me</span> <span class="py-o">=</span> <span class="py-n">1</span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="py-v">faculty_rank</span> <span class="py-o">=</span> <span class="py-v">for_me</span> <span class="py-o">&lt;&lt;</span> <span class="py-n">2</span></div>
                 <p style="color: #58a6ff;"><strong>> RETRIEVED_MEMORIES:</strong></p>
                 <p>Simply the best and incredibly patient with us. You never got tired of explaining the exact same things so many times until we truly understood them. Your funny jokes always kept the lab and the whole group's mood up, but you knew exactly when it was time to be serious. Thank you for the endless advice, for motivating us to learn everything ourselves just like you did, and for pushing me never to give up on a subject or anything I wanted to learn. You didn't just teach us engineering, you left a permanent mark on my journey here and made it so special. <span class="highlight-yellow">(From the code you understand where you are ranked hahaha )</span></p>
             </div>
@@ -189,11 +192,9 @@
                     <li>Implementation of Mechatronics System (Creating system with PID control)</li>
                 </ul>
                 <p style="color: #58a6ff;"><strong>> EXECUTE_SCRIPT:</strong></p>
-                <div class="code-block">
-                    while prof_Arxhendi.makes_learning_fun():
-                    &nbsp;&nbsp;&nbsp;&nbsp;share_infinite_knowledge()
-                    &nbsp;&nbsp;&nbsp;&nbsp;aura_points += 500
-                </div>
+                <div class="code-block"><span class="py-k">while</span> <span class="py-v">prof_Arxhendi</span>.<span class="py-f">makes_learning_fun</span>():
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="py-f">share_infinite_knowledge</span>()
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="py-v">aura_points</span> <span class="py-o">+=</span> <span class="py-n">500</span></div>
                 <p style="color: #58a6ff;"><strong>> RETRIEVED_MEMORIES:</strong></p>
                 <p>The absolute funniest professor, and you've been right here with us since day one always making sure we actually learn. You are incredibly smart across so many fields. You have this classic way of never directly praising us or saying when something is good, you just look at us and listen to what we are saying while we wait for feedback, but your jokes always know exactly how to make our day better. I've had such an amazing time learning from you, and honestly, thank you for being the go to person I complained to the most out of everyone and I am so sorry for always doing that to you! Your sarcastic humor and brilliant tech insights made the hardest semesters entirely worth it. You are genuinely one of the absolute best! Solid Top 5 aura of the professors.</p>
             </div>
@@ -234,15 +235,13 @@
                     <li>Autonomous & Mobile Robots (Creating a digital twin of the DJI Tello drone)</li>
                 </ul>
                 <p style="color: #58a6ff;"><strong>> EXECUTE_SCRIPT:</strong></p>
-                <div class="code-block">
-                    while (sigma_mode) {
-                    &nbsp;&nbsp;&nbsp;&nbsp;rage_bait();
-                    &nbsp;&nbsp;&nbsp;&nbsp;give_life_advice();
-                    &nbsp;&nbsp;&nbsp;&nbsp;aura_points += 1;
-                    }
-                </div>
+                <div class="code-block"><span class="py-k">while</span> (<span class="py-v">sigma_mode</span>) {
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="py-f">rage_bait</span>();
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="py-f">give_life_advice</span>();
+                    &nbsp;&nbsp;&nbsp;&nbsp;<span class="py-v">aura_points</span> <span class="py-o">+=</span> <span class="py-n">1</span>;
+                    }</div>
                 <p style="color: #58a6ff;"><strong>> RETRIEVED_MEMORIES:</strong></p>
-                <p>You joined us from America just for this final year and completely changed the laboratory workspace. An aerospace engineer whose specialization is in drones, but your real focus is delivering funny jokes all the time, never getting serious, elite rage baiting, and making fun of the other team members! You constantly call yourself 'Sigma' and turned our labs into a daily competition of who has the highest 'aura.' Even though there were times I couldn't stand the absolute chaos and learned little from the actual subject, you were interested, gave excellent life advice, and told us amazing stories. Plus, bringing us baklava that one time was the absolute best and so delicious. <span class="highlight-yellow">(Safe travels on your way back to America, "The Emperor of Aerospace!". You've definitely left an impact here!)</span></p>
+                <p>You joined us from America just for this final year and completely changed the laboratory workspace. An aerospace engineer whose specialization is in drones, but your real focus is delivering funny jokes all the time, never getting serious, elite rage baiting, and making fun of the other team members! You constantly call yourself 'Sigma' and turned our labs into a daily competition of who has the highest 'aura.' Even though there were times I couldn't stand the absolute chaos and learned little from the actual subject, you were interested, gave excellent life advice, and told us amazing stories. Plus, bringing us baklava that one time was the absolute best and so delicious. <span class="highlight-yellow">Safe travels on your way back to America, "The Emperor of Aerospace!". You've definitely left an impact here!</span></p>
             </div>
         </div>
 
